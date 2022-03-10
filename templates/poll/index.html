@@ -3,12 +3,12 @@
 설문 조사
 {% endblock %}
 {% block content %}
-    <div id="container mt-5">
+    <div class="container my-3">
         <section>
             {% if question_list %}
                 <div class="row">
                     {% for question in question_list %}
-                    <div class="col-sm-4">
+                    <div class="col-sm-4 my-3">
                         <div class="card text-center">
                             <div class="card-body">
                                 <h5 class="card-title">{{ question.question_text }}</h5>
